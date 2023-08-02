@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 export const Feedback = ({ options, onLeaveFeedback }) => {
   return (
     <>
-      <ul style={{ listStyle: 'none', display: 'flex', gap: '10px' }}>
+      <ul className="buttons">
         {options.map(option => (
           <li key={option}>
             <button onClick={() => onLeaveFeedback(option)}>{option}</button>

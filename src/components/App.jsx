@@ -6,6 +6,8 @@ import { Feedback } from './Feedback/Feedback';
 import { Section } from './Section/Section';
 import { Notification } from './Notification/Notification';
 
+import '../styles/styles.scss';
+
 export class App extends React.Component {
   state = {
     good: 0,

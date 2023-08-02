@@ -11,7 +11,7 @@ export const Statistics = ({
   return (
     <>
       <h2>Statistics</h2>
-      <ul style={{ listStyle: 'none' }}>
+      <ul>
         <li>Good: {good}</li>
         <li>Neutral: {neutral}</li>
         <li>Bad: {bad}</li>
