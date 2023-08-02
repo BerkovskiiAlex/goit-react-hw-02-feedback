@@ -1,4 +1,6 @@
 import React from 'react';
+import 'modern-normalize';
+
 import { Statistics } from './Statistics/Statistics';
 import { Feedback } from './Feedback/Feedback';
 import { Section } from './Section/Section';

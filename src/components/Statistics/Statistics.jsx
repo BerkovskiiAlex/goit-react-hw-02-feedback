@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 export const Statistics = ({
   good,
@@ -9,8 +10,8 @@ export const Statistics = ({
 }) => {
   return (
     <>
-      <span>Statistics</span>
-      <ul>
+      <h2>Statistics</h2>
+      <ul style={{ listStyle: 'none' }}>
         <li>Good: {good}</li>
         <li>Neutral: {neutral}</li>
         <li>Bad: {bad}</li>
@@ -19,4 +20,12 @@ export const Statistics = ({
       </ul>
     </>
   );
+};
+
+Statistics.propTypes = {
+  good: PropTypes.number,
+  neutral: PropTypes.number,
+  bad: PropTypes.number,
+  total: PropTypes.number,
+  positivePercentage: PropTypes.string,
 };
